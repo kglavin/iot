@@ -2,6 +2,7 @@
 #
 # generate statistics on IOT thing and send via http to iot gateway
 #
+
 import usocket
 import urequests as requests
 import time
