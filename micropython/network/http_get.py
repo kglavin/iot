@@ -37,11 +37,11 @@ def post(url,port,id,data, myhost=''):
     addr = socket.getaddrinfo(host, port)[0][-1]
     s = socket.socket()
     s.connect(addr)
-    payload="{'id':"+id+"',host':"+myhost+',data:'+data+",}"
+    payload='{"id":"' + id + '","host":"' + myhost +'","data":' + data +'}'
     s.send(bytes('POST /%s HTTP/1.1\r\nHost: %s\r\nContent-Type: application/json\r\nContent-Length: %i\r\n%s\r\n' % (path,host,len(payload),payload), 'utf8'))
     s.close()
 
-def post_loop(url,port,count=500):
+def post_loop(url,port,count=500, sleep_time=1000):
     ''' loop with a period of 1 second, performing a HTTP post'''
     rtc = machine.RTC()
     sta_if = network.WLAN(network.STA_IF)
@@ -51,12 +51,17 @@ def post_loop(url,port,count=500):
     prev_u=0
     st = 1000
     for i in range(count):
-        time.sleep_ms(st)
         y,mo,d,w,h,m,s,u = rtc.datetime()
         #store the subseconds to to allow calculatation of how long it takes 
         #so we can keep the period to exactly once per second.
         prev_u = u
-        data = "#ts:"+str((m,s,u))+"#c1:"+str(i)+"#c2:"+str(i*i)+"#c3:"+str(i*i*i)+"#"
+        data = '"'+"#ts:"+str((m,s,u))+"#c1:"+str(i)+"#c2:"+str(i*i)+"#c3:"+str(i*i*i)+"#"+'"'
         post(url,port,id,data,myhost) 
         y,mo,d,w,h,m,s,u = rtc.datetime()
-        st = 1000-(u-prev_u)
+        st = sleep_time-(u-prev_u)
+        time.sleep_ms(st)
+        
+
+while True:
+    post_loop('http://192.168.2.1/data',2000,72000)
+

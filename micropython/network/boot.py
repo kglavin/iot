@@ -18,5 +18,4 @@ def do_connect():
     print('network config:', sta_if.ifconfig())
 
 do_connect()
-
- 
+#import http_get
