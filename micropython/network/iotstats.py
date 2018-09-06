@@ -12,7 +12,7 @@ import json
 
 
 
-def do_stats(loops=1000):
+def do_stats():
     gateway_url = "http://192.168.2.1:2000/"
     count=1
     sta_if = network.WLAN(network.STA_IF)
