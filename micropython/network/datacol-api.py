@@ -8,7 +8,32 @@ app = Flask(__name__)
 api = Api(app)
 
 things = {}
-configs = { '70a1b200':  {'loop':1000, 'stat_loop':20 } }  
+configs = { '70a1b200':  {  1:        {'func':'do_stat',
+                                        'val':{'url':'http://192.168.2.1:2000/stats/<id>'}},
+                            2:        {'func':'do_sleep',
+                                        'val':{'time':200}},
+                            3:        {'func':'do_stat',
+                                        'val':{'url':'http://192.168.2.1:2000/stats/<id>'}},
+                            4:        {'func':'do_sleep',
+                                        'val':{'time':200}},
+                            5:        {'func':'do_stat',
+                                        'val':{'url':'http://192.168.2.1:2000/stats/<id>'}},
+                            6:        {'func':'do_sleep',
+                                        'val':{'time':200}},
+                            7:        {'func':'do_inc_ttl',
+                                        'val':{'ttl':7}},
+                            8:        {'func':'do_sleep',
+                                        'val':{'time':200}},
+                            9:        {'func':'do_stat',
+                                        'val':{'url':'http://192.168.2.1:2000/stats/<id>'}},
+                            10:        {'func':'do_stat',
+                                        'val':{'url':'http://192.168.2.1:2000/stats/<id>'}},
+                            'default': {'func':'do_config',
+                                        'val':{'url':'http://192.168.2.1:2000/config/1'}, 
+                                        'ttl': 20, 
+                                        'valid_op_codes':['1','2','3','4','5','6','7','8','9','10','default']}
+                            }
+            }  
 
 def abort_if_thing_doesnt_exist(thing_id):
     if thing_id not in things:
