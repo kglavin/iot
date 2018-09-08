@@ -1,0 +1,34 @@
+
+
+steps to get 8266 boards running micropython
+
+ls /dev/tty.SLAB_USBtoUART 
+esptool.py --port /dev/tty.SLAB_USBtoUART erase_flash
+esptool.py --port /dev/tty.SLAB_USBtoUART --baud 460800 write_flash --flash_size=detect 0 esp8266-20180511-v1.9.4.bin
+
+import network
+sta_if = network.WLAN(network.STA_IF)
+ap_if = network.WLAN(network.AP_IF)
+
+sta_if.active()
+ap_if.active()
+
+ap_if.ifconfig()
+
+sta_if.connect('<your ESSID>', '<your password>')
+
+sta_if.ifconfig()
+
+## running webrepl
+import webrepl_setup
+
+##Set the password # reboot
+## attach to the 8266 ap id with password 
+
+and connect using http://micropython.org/webrepl 
+
+
+
+upload boot.py so all these will happen automatically
+
+upload application program

@@ -1,5 +1,5 @@
 import time
-import requests
+import urequests as requests
 import json
 
 class JobMachine:
