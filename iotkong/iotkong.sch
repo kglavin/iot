@@ -1,0 +1,664 @@
+EESchema Schematic File Version 4
+LIBS:iotkong-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "iotkong"
+Date "2018-09-07"
+Rev "v0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Kevin Glavin"
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5B937EBC
+P 1900 2750
+F 0 "C1" H 1900 2950 50  0000 L CNN
+F 1 "C" H 1950 2850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1938 2600 50  0001 C CNN
+F 3 "~" H 1900 2750 50  0001 C CNN
+	1    1900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5B937FBD
+P 4000 2800
+F 0 "C2" H 4000 3000 50  0000 L CNN
+F 1 "C" H 4050 2900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4038 2650 50  0001 C CNN
+F 3 "~" H 4000 2800 50  0001 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5B937FE0
+P 6100 2800
+F 0 "C3" H 6100 3000 50  0000 L CNN
+F 1 "C" H 6150 2900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 6138 2650 50  0001 C CNN
+F 3 "~" H 6100 2800 50  0001 C CNN
+	1    6100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5B938009
+P 8100 2800
+F 0 "C4" H 8150 3000 50  0000 L CNN
+F 1 "C" H 8150 2900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 8138 2650 50  0001 C CNN
+F 3 "~" H 8100 2800 50  0001 C CNN
+	1    8100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5B938047
+P 10050 2800
+F 0 "C5" H 10100 3000 50  0000 L CNN
+F 1 "C" H 10100 2900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 10088 2650 50  0001 C CNN
+F 3 "~" H 10050 2800 50  0001 C CNN
+	1    10050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_SPDT SW1
+U 1 1 5B938406
+P 2250 1450
+F 0 "SW1" H 2250 1735 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 2250 1644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 2250 1450 50  0001 C CNN
+F 3 "" H 2250 1450 50  0001 C CNN
+	1    2250 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1400 1850 1350
+Wire Wire Line
+	1850 1350 2050 1350
+Wire Wire Line
+	2450 1450 2550 1450
+Wire Wire Line
+	2550 1450 2550 1350
+$Comp
+L Device:R R1
+U 1 1 5B938BB3
+P 1950 1700
+F 0 "R1" H 2020 1746 50  0000 L CNN
+F 1 "R" H 2020 1655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1880 1700 50  0001 C CNN
+F 3 "~" H 1950 1700 50  0001 C CNN
+	1    1950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1550 2050 1550
+Wire Wire Line
+	1950 2000 1950 1850
+$Comp
+L Connector:Conn_01x15_Female J1
+U 1 1 5B965860
+P 1250 3300
+F 0 "J1" H 1200 4100 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 1000 2500 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 1250 3300 50  0001 C CNN
+F 3 "~" H 1250 3300 50  0001 C CNN
+	1    1250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J3
+U 1 1 5B9658BB
+P 2350 3300
+F 0 "J3" H 2350 4100 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 2150 2500 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 2350 3300 50  0001 C CNN
+F 3 "~" H 2350 3300 50  0001 C CNN
+	1    2350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J4
+U 1 1 5B969200
+P 3350 3350
+F 0 "J4" H 3300 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 3150 2600 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 3350 3350 50  0001 C CNN
+F 3 "~" H 3350 3350 50  0001 C CNN
+	1    3350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J5
+U 1 1 5B969207
+P 4450 3350
+F 0 "J5" H 4400 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 4350 2600 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 4450 3350 50  0001 C CNN
+F 3 "~" H 4450 3350 50  0001 C CNN
+	1    4450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J6
+U 1 1 5B9695D6
+P 5450 3350
+F 0 "J6" H 5400 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 5300 2550 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 5450 3350 50  0001 C CNN
+F 3 "~" H 5450 3350 50  0001 C CNN
+	1    5450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J7
+U 1 1 5B9695DD
+P 6550 3350
+F 0 "J7" H 6500 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 6400 2550 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 6550 3350 50  0001 C CNN
+F 3 "~" H 6550 3350 50  0001 C CNN
+	1    6550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J9
+U 1 1 5B969984
+P 7450 3350
+F 0 "J9" H 7450 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 7400 2550 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 7450 3350 50  0001 C CNN
+F 3 "~" H 7450 3350 50  0001 C CNN
+	1    7450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J11
+U 1 1 5B96998B
+P 8550 3350
+F 0 "J11" H 8550 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 8300 2550 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 8550 3350 50  0001 C CNN
+F 3 "~" H 8550 3350 50  0001 C CNN
+	1    8550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J8
+U 1 1 5B969DD6
+P 9400 3350
+F 0 "J8" H 9400 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 9150 2550 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 9400 3350 50  0001 C CNN
+F 3 "~" H 9400 3350 50  0001 C CNN
+	1    9400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J10
+U 1 1 5B969DDD
+P 10500 3350
+F 0 "J10" H 10500 4150 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 10250 2550 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 10500 3350 50  0001 C CNN
+F 3 "~" H 10500 3350 50  0001 C CNN
+	1    10500 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 2600 0    50   Input ~ 0
+VCC
+Text GLabel 1750 2900 0    50   Input ~ 0
+GND
+Text GLabel 3900 2650 0    50   Input ~ 0
+VCC
+Text GLabel 3900 2950 0    50   Input ~ 0
+GND
+Text GLabel 5950 2650 0    50   Input ~ 0
+VCC
+Text GLabel 5950 2950 0    50   Input ~ 0
+GND
+Text GLabel 8000 2650 0    50   Input ~ 0
+VCC
+Text GLabel 8000 2950 0    50   Input ~ 0
+GND
+Text GLabel 9950 2650 0    50   Input ~ 0
+VCC
+Text GLabel 9950 2950 0    50   Input ~ 0
+GND
+Text GLabel 9200 2750 0    50   Input ~ 0
+GND
+Text GLabel 7250 2750 0    50   Input ~ 0
+GND
+Text GLabel 5250 2750 0    50   Input ~ 0
+GND
+Text GLabel 3150 2750 0    50   Input ~ 0
+GND
+Text GLabel 1050 2700 0    50   Input ~ 0
+GND
+Text GLabel 2150 3100 0    50   Input ~ 0
+GND
+Text GLabel 4250 3150 0    50   Input ~ 0
+GND
+Text GLabel 6350 3150 0    50   Input ~ 0
+GND
+Text GLabel 8350 3150 0    50   Input ~ 0
+GND
+Text GLabel 10300 3150 0    50   Input ~ 0
+GND
+Wire Wire Line
+	9950 2650 10050 2650
+Wire Wire Line
+	10300 2650 10050 2650
+Connection ~ 10050 2650
+Wire Wire Line
+	10300 2750 10200 2750
+Wire Wire Line
+	10200 2750 10200 2950
+Wire Wire Line
+	10200 2950 10050 2950
+Wire Wire Line
+	9950 2950 10000 2950
+Connection ~ 10050 2950
+Wire Wire Line
+	8000 2650 8100 2650
+Wire Wire Line
+	8350 2650 8100 2650
+Connection ~ 8100 2650
+Wire Wire Line
+	8000 2950 8050 2950
+Wire Wire Line
+	8350 2750 8200 2750
+Wire Wire Line
+	8200 2750 8200 2950
+Wire Wire Line
+	8200 2950 8100 2950
+Connection ~ 8100 2950
+Wire Wire Line
+	5950 2650 6100 2650
+Wire Wire Line
+	6350 2650 6100 2650
+Connection ~ 6100 2650
+Wire Wire Line
+	6100 2950 6000 2950
+Wire Wire Line
+	6350 2750 6250 2750
+Wire Wire Line
+	6250 2750 6250 2950
+Wire Wire Line
+	6250 2950 6100 2950
+Connection ~ 6100 2950
+Wire Wire Line
+	3900 2650 4000 2650
+Wire Wire Line
+	4250 2650 4000 2650
+Connection ~ 4000 2650
+Wire Wire Line
+	3900 2950 3950 2950
+Wire Wire Line
+	4000 2950 4150 2950
+Wire Wire Line
+	4150 2950 4150 2750
+Wire Wire Line
+	4150 2750 4250 2750
+Connection ~ 4000 2950
+Wire Wire Line
+	1750 2600 1900 2600
+Wire Wire Line
+	1900 2600 2150 2600
+Connection ~ 1900 2600
+Wire Wire Line
+	1750 2900 1800 2900
+Wire Wire Line
+	2150 2700 2050 2700
+Wire Wire Line
+	2050 2700 2050 2900
+Wire Wire Line
+	2050 2900 1900 2900
+Connection ~ 1900 2900
+Text GLabel 2700 1350 2    50   Input ~ 0
+VCC
+Text GLabel 2700 1650 2    50   Input ~ 0
+GND
+Wire Wire Line
+	2700 1650 2300 1650
+Wire Wire Line
+	2300 1650 2300 2000
+Wire Wire Line
+	2300 2000 1950 2000
+Wire Wire Line
+	2700 1350 2550 1350
+Wire Notes Line
+	750  2450 2700 2450
+Wire Notes Line
+	2700 2450 2700 4250
+Wire Notes Line
+	2700 4250 750  4250
+Wire Notes Line
+	750  4250 750  2450
+Wire Notes Line
+	2900 2450 2900 4250
+Wire Notes Line
+	2900 4250 4700 4250
+Wire Notes Line
+	4700 4250 4700 2450
+Wire Notes Line
+	4700 2450 2900 2450
+Wire Notes Line
+	4950 2450 4950 4250
+Wire Notes Line
+	4950 4250 6750 4250
+Wire Notes Line
+	6750 4250 6750 2450
+Wire Notes Line
+	6750 2450 4950 2450
+Wire Notes Line
+	6950 2450 6950 4250
+Wire Notes Line
+	6950 4250 8800 4250
+Wire Notes Line
+	8800 4250 8800 2450
+Wire Notes Line
+	8800 2450 6950 2450
+Wire Notes Line
+	8950 2450 8950 4250
+Wire Notes Line
+	8950 4250 10700 4250
+Wire Notes Line
+	10700 4250 10700 2450
+Wire Notes Line
+	10700 2450 8950 2450
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5B9912E2
+P 3800 3300
+F 0 "SW3" H 3750 3200 50  0000 C CNN
+F 1 "SW_SPST" H 3800 3100 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3800 3300 50  0001 C CNN
+F 3 "" H 3800 3300 50  0001 C CNN
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5B993CA3
+P 1700 3300
+F 0 "SW2" H 1650 3200 50  0000 C CNN
+F 1 "SW_SPST" H 1700 3100 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1700 3300 50  0001 C CNN
+F 3 "" H 1700 3300 50  0001 C CNN
+	1    1700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW4
+U 1 1 5B993D08
+P 5850 3350
+F 0 "SW4" H 5800 3250 50  0000 C CNN
+F 1 "SW_SPST" H 5850 3150 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5850 3350 50  0001 C CNN
+F 3 "" H 5850 3350 50  0001 C CNN
+	1    5850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW5
+U 1 1 5B993DE6
+P 7900 3350
+F 0 "SW5" H 7850 3250 50  0000 C CNN
+F 1 "SW_SPST" H 7900 3150 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7900 3350 50  0001 C CNN
+F 3 "" H 7900 3350 50  0001 C CNN
+	1    7900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW6
+U 1 1 5B993E8F
+P 9850 3350
+F 0 "SW6" H 9800 3250 50  0000 C CNN
+F 1 "SW_SPST" H 9800 3150 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 9850 3350 50  0001 C CNN
+F 3 "" H 9850 3350 50  0001 C CNN
+	1    9850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2850 10250 2850
+Wire Wire Line
+	10250 2850 10250 3050
+Wire Wire Line
+	10250 3050 10050 3050
+Wire Wire Line
+	10050 3050 10050 3350
+Wire Wire Line
+	9650 3350 9650 3050
+Wire Wire Line
+	9650 3050 10000 3050
+Wire Wire Line
+	10000 3050 10000 2950
+Connection ~ 10000 2950
+Wire Wire Line
+	10000 2950 10050 2950
+Wire Wire Line
+	8350 2850 8250 2850
+Wire Wire Line
+	8250 2850 8250 3050
+Wire Wire Line
+	8250 3050 8100 3050
+Wire Wire Line
+	8100 3050 8100 3350
+Wire Wire Line
+	7700 3350 7700 3100
+Wire Wire Line
+	7700 3100 8050 3100
+Wire Wire Line
+	8050 3100 8050 2950
+Connection ~ 8050 2950
+Wire Wire Line
+	8050 2950 8100 2950
+Wire Wire Line
+	6350 2850 6300 2850
+Wire Wire Line
+	6300 2850 6300 3050
+Wire Wire Line
+	6300 3050 6050 3050
+Wire Wire Line
+	6050 3050 6050 3350
+Wire Wire Line
+	5650 3350 5650 3100
+Wire Wire Line
+	5650 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 2950
+Connection ~ 6000 2950
+Wire Wire Line
+	6000 2950 5950 2950
+Wire Wire Line
+	2150 2800 2100 2800
+Wire Wire Line
+	2100 2800 2100 3000
+Wire Wire Line
+	2100 3000 1900 3000
+Wire Wire Line
+	1900 3000 1900 3300
+Wire Wire Line
+	1800 2900 1800 3050
+Wire Wire Line
+	1800 3050 1500 3050
+Wire Wire Line
+	1500 3050 1500 3300
+Connection ~ 1800 2900
+Wire Wire Line
+	1800 2900 1900 2900
+NoConn ~ 1050 2600
+NoConn ~ 1050 2800
+NoConn ~ 1050 2900
+NoConn ~ 1050 3000
+NoConn ~ 1050 3100
+NoConn ~ 1050 3200
+NoConn ~ 1050 3300
+NoConn ~ 1050 3400
+NoConn ~ 1050 3500
+NoConn ~ 1050 3600
+NoConn ~ 1050 3700
+NoConn ~ 1050 3800
+NoConn ~ 1050 3900
+NoConn ~ 1050 4000
+NoConn ~ 2150 4000
+NoConn ~ 2150 3900
+NoConn ~ 2150 3800
+NoConn ~ 2150 3700
+NoConn ~ 2150 3600
+NoConn ~ 2150 3500
+NoConn ~ 2150 3400
+NoConn ~ 2150 3300
+NoConn ~ 2150 3200
+NoConn ~ 2150 3000
+NoConn ~ 2150 2900
+NoConn ~ 3150 2650
+NoConn ~ 3150 2850
+NoConn ~ 3150 2950
+NoConn ~ 3150 3050
+NoConn ~ 3150 3150
+NoConn ~ 3150 3250
+NoConn ~ 3150 3350
+NoConn ~ 3150 3450
+NoConn ~ 3150 3550
+NoConn ~ 3150 3650
+NoConn ~ 3150 3750
+NoConn ~ 3150 3850
+NoConn ~ 3150 3950
+NoConn ~ 3150 4050
+NoConn ~ 4250 4050
+NoConn ~ 4250 3950
+NoConn ~ 4250 3850
+NoConn ~ 4250 3750
+NoConn ~ 4250 3650
+NoConn ~ 4250 3550
+NoConn ~ 4250 3450
+NoConn ~ 4250 3350
+NoConn ~ 4250 3250
+NoConn ~ 4250 3050
+NoConn ~ 4250 2950
+NoConn ~ 5250 4050
+NoConn ~ 5250 3950
+NoConn ~ 5250 3850
+NoConn ~ 5250 3750
+NoConn ~ 5250 3550
+NoConn ~ 5250 3450
+NoConn ~ 5250 3350
+NoConn ~ 5250 3650
+NoConn ~ 5250 3250
+NoConn ~ 5250 2950
+NoConn ~ 5250 2650
+NoConn ~ 5250 2850
+NoConn ~ 5250 3050
+NoConn ~ 5250 3150
+NoConn ~ 6350 4050
+NoConn ~ 6350 3950
+NoConn ~ 6350 3850
+NoConn ~ 6350 3750
+NoConn ~ 6350 3650
+NoConn ~ 6350 3550
+NoConn ~ 6350 3450
+NoConn ~ 6350 3350
+NoConn ~ 6350 3250
+NoConn ~ 6350 3050
+NoConn ~ 6350 2950
+NoConn ~ 7250 4050
+NoConn ~ 7250 3850
+NoConn ~ 7250 3950
+NoConn ~ 7250 3750
+NoConn ~ 7250 3650
+NoConn ~ 7250 3550
+NoConn ~ 7250 3450
+NoConn ~ 7250 3350
+NoConn ~ 7250 3250
+NoConn ~ 7250 3150
+NoConn ~ 7250 3050
+NoConn ~ 7250 2950
+NoConn ~ 7250 2850
+NoConn ~ 7250 2650
+NoConn ~ 8350 4050
+NoConn ~ 8350 3950
+NoConn ~ 8350 3850
+NoConn ~ 8350 3750
+NoConn ~ 8350 3650
+NoConn ~ 8350 3550
+NoConn ~ 8350 3450
+NoConn ~ 8350 3350
+NoConn ~ 8350 3250
+NoConn ~ 8350 3050
+NoConn ~ 8350 2950
+NoConn ~ 9200 2650
+NoConn ~ 9200 2850
+NoConn ~ 9200 2950
+NoConn ~ 9200 3050
+NoConn ~ 9200 3150
+NoConn ~ 9200 3250
+NoConn ~ 9200 3350
+NoConn ~ 9200 3450
+NoConn ~ 9200 3550
+NoConn ~ 9200 3650
+NoConn ~ 9200 3750
+NoConn ~ 9200 3850
+NoConn ~ 9200 3950
+NoConn ~ 9200 4050
+NoConn ~ 10300 4050
+NoConn ~ 10300 3950
+NoConn ~ 10300 3850
+NoConn ~ 10300 3750
+NoConn ~ 10300 3650
+NoConn ~ 10300 3550
+NoConn ~ 10300 3450
+NoConn ~ 10300 3350
+NoConn ~ 10300 3250
+NoConn ~ 10300 3050
+NoConn ~ 10300 2950
+Wire Wire Line
+	4250 2850 4200 2850
+Wire Wire Line
+	4200 2850 4200 3050
+Wire Wire Line
+	4200 3050 4000 3050
+Wire Wire Line
+	4000 3050 4000 3300
+Wire Wire Line
+	3600 3300 3600 3100
+Wire Wire Line
+	3600 3100 3950 3100
+Wire Wire Line
+	3950 3100 3950 2950
+Connection ~ 3950 2950
+Wire Wire Line
+	3950 2950 4000 2950
+NoConn ~ 1600 1700
+NoConn ~ 1600 1600
+Wire Wire Line
+	1600 1400 1850 1400
+$Comp
+L Connector:USB_B J2
+U 1 1 5BA2F306
+P 1300 1600
+F 0 "J2" H 1355 2067 50  0000 C CNN
+F 1 "USB_B" H 1355 1976 50  0000 C CNN
+F 2 "Connector_USB:USB_B_Amphenol_MUSB-D511_Vertical_Rugged" H 1450 1550 50  0001 C CNN
+F 3 " ~" H 1450 1550 50  0001 C CNN
+	1    1300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2000 1300 2000
+Wire Wire Line
+	1950 2000 1300 2000
+Connection ~ 1950 2000
+Connection ~ 1300 2000
+$EndSCHEMATC
