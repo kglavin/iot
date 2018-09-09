@@ -109,7 +109,7 @@ U 1 1 5B965860
 P 1250 3300
 F 0 "J1" H 1200 4100 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 1000 2500 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 1250 3300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 1250 3300 50  0001 C CNN
 F 3 "~" H 1250 3300 50  0001 C CNN
 	1    1250 3300
 	1    0    0    -1  
@@ -120,7 +120,7 @@ U 1 1 5B9658BB
 P 2350 3300
 F 0 "J3" H 2350 4100 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 2150 2500 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 2350 3300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 2350 3300 50  0001 C CNN
 F 3 "~" H 2350 3300 50  0001 C CNN
 	1    2350 3300
 	1    0    0    -1  
@@ -131,7 +131,7 @@ U 1 1 5B969200
 P 3350 3350
 F 0 "J4" H 3300 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 3150 2600 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 3350 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 3350 3350 50  0001 C CNN
 F 3 "~" H 3350 3350 50  0001 C CNN
 	1    3350 3350
 	1    0    0    -1  
@@ -142,7 +142,7 @@ U 1 1 5B969207
 P 4450 3350
 F 0 "J5" H 4400 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 4350 2600 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 4450 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 4450 3350 50  0001 C CNN
 F 3 "~" H 4450 3350 50  0001 C CNN
 	1    4450 3350
 	1    0    0    -1  
@@ -153,7 +153,7 @@ U 1 1 5B9695D6
 P 5450 3350
 F 0 "J6" H 5400 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 5300 2550 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 5450 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 5450 3350 50  0001 C CNN
 F 3 "~" H 5450 3350 50  0001 C CNN
 	1    5450 3350
 	1    0    0    -1  
@@ -164,7 +164,7 @@ U 1 1 5B9695DD
 P 6550 3350
 F 0 "J7" H 6500 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 6400 2550 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 6550 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 6550 3350 50  0001 C CNN
 F 3 "~" H 6550 3350 50  0001 C CNN
 	1    6550 3350
 	1    0    0    -1  
@@ -175,7 +175,7 @@ U 1 1 5B969984
 P 7450 3350
 F 0 "J9" H 7450 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 7400 2550 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 7450 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 7450 3350 50  0001 C CNN
 F 3 "~" H 7450 3350 50  0001 C CNN
 	1    7450 3350
 	1    0    0    -1  
@@ -186,7 +186,7 @@ U 1 1 5B96998B
 P 8550 3350
 F 0 "J11" H 8550 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 8300 2550 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 8550 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 8550 3350 50  0001 C CNN
 F 3 "~" H 8550 3350 50  0001 C CNN
 	1    8550 3350
 	1    0    0    -1  
@@ -197,7 +197,7 @@ U 1 1 5B969DD6
 P 9400 3350
 F 0 "J8" H 9400 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 9150 2550 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 9400 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 9400 3350 50  0001 C CNN
 F 3 "~" H 9400 3350 50  0001 C CNN
 	1    9400 3350
 	1    0    0    -1  
@@ -208,7 +208,7 @@ U 1 1 5B969DDD
 P 10500 3350
 F 0 "J10" H 10500 4150 50  0000 L CNN
 F 1 "Conn_01x15_Female" H 10250 2550 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-15A_1x15_P2.54mm_Vertical" H 10500 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H 10500 3350 50  0001 C CNN
 F 3 "~" H 10500 3350 50  0001 C CNN
 	1    10500 3350
 	1    0    0    -1  
