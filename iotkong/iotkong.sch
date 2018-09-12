@@ -75,7 +75,7 @@ U 1 1 5B938406
 P 2250 1450
 F 0 "SW1" H 2250 1735 50  0000 C CNN
 F 1 "SW_Push_SPDT" H 2250 1644 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled" H 2250 1450 50  0001 C CNN
+F 2 "library:CKN10397-ND" H 2250 1450 50  0001 C CNN
 F 3 "" H 2250 1450 50  0001 C CNN
 	1    2250 1450
 	-1   0    0    -1  
@@ -596,7 +596,7 @@ U 1 1 5BA2F306
 P 1300 1600
 F 0 "J2" H 1355 2067 50  0000 C CNN
 F 1 "USB_B" H 1355 1976 50  0000 C CNN
-F 2 "Connector_USB:USB_B_Amphenol_MUSB-D511_Vertical_Rugged" H 1450 1550 50  0001 C CNN
+F 2 "library:USB_2_0" H 1450 1550 50  0001 C CNN
 F 3 " ~" H 1450 1550 50  0001 C CNN
 	1    1300 1600
 	1    0    0    -1  
@@ -7171,7 +7171,7 @@ L Device:R R11
 U 1 1 5B9AFD7D
 P 7150 5100
 F 0 "R11" H 7050 5250 50  0000 L CNN
-F 1 "R" H 7050 5050 50  0000 L CNN
+F 1 "100" H 7050 5050 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7080 5100 50  0001 C CNN
 F 3 "~" H 7150 5100 50  0001 C CNN
 	1    7150 5100
@@ -7427,4 +7427,68 @@ Wire Wire Line
 Connection ~ 9850 2950
 Wire Wire Line
 	9850 2950 10000 2950
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5B9985CA
+P 8150 4900
+F 0 "MH1" H 8250 4946 50  0000 L CNN
+F 1 "MountingHole" H 8250 4855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 8150 4900 50  0001 C CNN
+F 3 "~" H 8150 4900 50  0001 C CNN
+	1    8150 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5B998681
+P 8950 4900
+F 0 "MH3" H 9050 4946 50  0000 L CNN
+F 1 "MountingHole" H 9050 4855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 8950 4900 50  0001 C CNN
+F 3 "~" H 8950 4900 50  0001 C CNN
+	1    8950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5B99881C
+P 8950 5200
+F 0 "MH4" H 9050 5246 50  0000 L CNN
+F 1 "MountingHole" H 9050 5155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 8950 5200 50  0001 C CNN
+F 3 "~" H 8950 5200 50  0001 C CNN
+	1    8950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5B999285
+P 8150 5450
+F 0 "#PWR?" H 8150 5200 50  0001 C CNN
+F 1 "Earth" H 8150 5300 50  0001 C CNN
+F 2 "" H 8150 5450 50  0001 C CNN
+F 3 "~" H 8150 5450 50  0001 C CNN
+	1    8150 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 5450 8150 5200
+Wire Wire Line
+	8150 5200 8150 4900
+Connection ~ 8150 5200
+Wire Wire Line
+	8150 5200 8950 5200
+Wire Wire Line
+	8150 4900 8950 4900
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5B998704
+P 8150 5200
+F 0 "MH2" H 8250 5246 50  0000 L CNN
+F 1 "MountingHole" H 8250 5155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 8150 5200 50  0001 C CNN
+F 3 "~" H 8150 5200 50  0001 C CNN
+	1    8150 5200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
